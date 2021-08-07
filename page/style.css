@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root {
+    --bg-color: #FFFCF7;
+    --primary-color: #F3BC58;
+    --default-text-color: #080A0D;
+    --text-burgundy-color: #634C41;
+    --marign-left-and-right: 60px;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin-top: 20px;
+    margin-left: var(--marign-left-and-right);
+    margin-right: var(--marign-left-and-right);
+    font-family: 'Raleway';
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-item {
+    flex-grow: 0;
+    font-size: 0.9em;
+    list-style: none;
+    color: var(--default-text-color);
+    margin-left: 20px;
+}
+
+.menu-item:hover {
+    opacity: 60%;
+}
+
+.food-menu {
+    margin-left: -50px;
+}
+
+.food-menu-item {
+    list-style: none;
+    background-color: white;
+    border-radius: 30px;
+    margin: 30px;
+    text-align: center;
+    width: 60px;
+    font-weight: 600;
+    font-family: "Raleway";
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.050);
+    box-shadow: rgba(0, 0, 0, 0.001) 0px 20px 25px -5px, rgba(0, 0, 0, 0.03) 0px 10px 10px -5px;
+}
+
+.food-menu-item:hover {
+    background-color: var(--primary-color);
+}
+
+.food-menu-item .menu-logo {
+    margin-left: 0px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--burgundy-color);
+}
+
+.menu-larger-horizontal-space {
+    flex-grow: 5;
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.button:hover {
+    opacity: 60%;
+}
+
+.button-bg-primary {
+    background-color: var(--primary-color);
+}
+
+.button-outline-primary {
+    border: 2px solid var(--primary-color);
+    color: var(--text-burgundy-color);
+}
+
+.section {
+    display: flex;
+}
+
+.section-child {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.popular-dishes-section {}
+
+.plate-img {
+    --img-size: 500px;
+    width: var(--img-size);
+    height: var(--img-size);
+    flex-grow: 5;
+}
+
+
+/* Utility functions */
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-size-title {
+    font-size: 1.5rem;
+}
+
+.m-2 {
+    margin: 2px;
+}
+
+.mr-6 {
+    margin-right: 6px;
+}
+
+.ml-6 {
+    margin-right: 6px;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+}
